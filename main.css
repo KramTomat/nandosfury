@@ -4,10 +4,39 @@ html, body {
   height: 100%;
 }
 
+body {
+  background: #222;
+  color: #CCC;
+  font-size: 2em;
+  font-family: Georgia, serif;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+button {
+  background: #ff194c;
+  background-image: linear-gradient(to bottom, #ff194c, #ff8419);
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+button:hover {
+  background: #ff8419;
+  background-image: linear-gradient(to bottom, #ff8419, #ff194c);
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #555;
+  cursor: unset;
 }
