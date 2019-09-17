@@ -5,10 +5,6 @@
   console.log(btnChoose, txtResult);
   
   fetch('names.json')
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(myJson) {
-      console.log(JSON.stringify(myJson));
-    });
+    .then(response => response.json())
+    .then(names => console.log(names));
 })(window, document);
